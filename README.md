@@ -16,10 +16,10 @@ minikube start --extra-config=apiserver.service-node-port-range=31713-31713
 cd (example_to_test)
 kubectl apply -k ./
 minikube service wordpress --url
-echo Entra en la url y añade algun post a wordpress, cambia el tema etc. para comprobar más adelante que el estado se mantiene.
+echo Entra en la url y añade algun post a wordpress, cambia el tema etc.
 kubectl scale deployment|statefulset wordpress --replicas=0
 kubectl scale deployment|statefulset wordpress --replicas=2
-echo Entra en la url y comprueba que el estado se mantiene
+echo Entra en la url y comprueba que el estado se mantiene. Posts, tema...
 kubectl delete -k ./
 minikube stop
 ```
