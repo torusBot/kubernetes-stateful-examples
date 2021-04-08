@@ -2,6 +2,13 @@
 
 El repositorio contiene dos ejemplos de aplicación stateful funcionando, una utilizando el objeto "Deployment" de la API de Kubernetes y otro el objeto "StatefulSet".
 
+## Referencias
+
+- https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/
+- https://medium.com/stakater/k8s-deployments-vs-statefulsets-vs-daemonsets-60582f0c62d4
+
+## Probar el funcionamiento 
+
 Para probar el funcionamiento:
 
 - Iniciar minikube. (Solo con un puerto mapeable por un problema de Wordpress)
